@@ -1,0 +1,112 @@
+package corejava;
+import java.util.*;
+public class task1 {
+	public static void main(String[] args) {
+		// take two integers a and b
+		int a=10;
+		int b=20;
+		System.out.println("add "+(a+b));
+		System.out.println("sub "+(a-b));
+		System.out.println("multi "+(a*b));
+		System.out.println("div " +(a/b));
+		System.out.println("modulus "+(a%b));
+
+    //swapping using bitwise operator
+		int a=10;
+		int b=20;
+		a^=b;
+//		System.out.println("a " +a);
+		b^=a;
+		System.out.println("b "+a);
+		a^=b;
+		System.out.println("a "+a);
+
+    //swap using third variable
+		int a=10;
+		int b=20;
+		int temp=a;
+		a=b;
+		b=temp;
+		System.out.println("a "+a);
+		System.out.println("b "+b);
+
+    //find last 2 digit number		
+		int x=134;
+		int lastd=x%100;
+		System.out.println("lastdigit "+lastd);
+
+    //find middle number
+    Scanner scan=new Scanner(System.in);
+		System.out.println("enter a ");
+		int a=scan.nextInt();
+		int middle=(a/100)%10;
+		System.out.println("middle "+middle);
+		System.out.println("sqr "+(middle*middle));
+
+    // to find last digit		
+		Scanner scan=new Scanner(System.in);
+		System.out.println("enter num");
+		int num=scan.nextInt();
+		num%=10;
+		System.out.println("last digit "+num);
+
+    // to find squarerrot
+    Scanner scan=new Scanner(System.in);
+		System.out.println("enter num");
+		double num=scan.nextDouble();
+		double formula=Math.sqrt(num);
+		System.out.println("squareroot "+formula);
+
+    //calculate area of traiangle
+		Scanner scan=new Scanner(System.in);
+		System.out.println("enter height");
+		double height=scan.nextDouble();
+		System.out.println("enter base");
+		double base=scan.nextDouble();
+		double formula=(0.5*height*base);
+		System.out.println("area "+formula);
+
+    //convert kilometer to mile
+		Scanner scan=new Scanner(System.in);
+		System.out.println("enter kilometer");
+		double kilometer=scan.nextDouble();
+		double mile=(kilometer*0.63);
+		System.out.println("mile "+mile);
+
+    //celsius to farenheit
+		Scanner scan=new Scanner(System.in);
+		System.out.println("enter celsius");
+		double celsius=scan.nextDouble();
+		double farenheit=((celsius*1.8)+32);
+		System.out.println("farenheit "+farenheit);
+
+    //quadratic equation
+		//(a+b)^2
+		Scanner scan=new Scanner(System.in);
+		System.out.println("enter a");
+		int a=scan.nextInt();
+		System.out.println("enter b");
+		int b=scan.nextInt();
+		double result=(Math.pow(a, 2)+Math.pow(b, 2)+(2*a*b));
+		System.out.println("result "+result);
+
+    //(a-b)^2
+				Scanner scan=new Scanner(System.in);
+				System.out.println("enter a");
+				int a=scan.nextInt();
+				System.out.println("enter b");
+				int b=scan.nextInt();
+				double result=(Math.pow(a, 2)+Math.pow(b, 2)-(2*a*b));
+				System.out.println("result "+result);
+
+//(a^2-b^2)
+		Scanner scan=new Scanner(System.in);
+		System.out.println("enter a");
+		int a=scan.nextInt();
+		System.out.println("enter b");
+		int b=scan.nextInt();
+		double result=(a+b)-(a-b);
+		System.out.println("result "+result);
+
+	}
+}
