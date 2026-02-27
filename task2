@@ -1,0 +1,320 @@
+package corejava;
+import java.util.Scanner;
+public class task2 {
+	public static void main(String[] args) {
+	Scanner scan=new Scanner(System.in);
+	//check if number is greater than 100
+	System.out.println("enter number ");
+	int num=scan.nextInt();
+	if(num>100) {
+	System.out.println("num greater than 100");
+	}
+	
+	//check number less than 0
+	System.out.println("enter number ");
+	int num=scan.nextInt();
+	if(num<0) {
+  System.out.println("no less than 0");
+	}
+	
+	//check  character is A
+	System.out.println("enter character");
+	char a=scan.next().charAt(0);
+	if(a=='A') {
+		System.out.println("character is A");
+	}
+	
+	//check no is divisible by 7
+	System.out.println("enter number ");
+	int num=scan.nextInt();
+	if(num%7==0) {
+		System.out.println("no is divisible by 7");
+	}
+	
+	
+	//check marks are exactly 100
+	System.out.println("enter number ");
+	int num=scan.nextInt();
+  if(num==100) {
+	System.out.println("marks are 100");
+	}
+	
+	//check string length is more than 5
+	System.out.println("enter string");
+	String a=scan.next();
+	if(a.length()>5) {
+		System.out.println("string length is more than 5");
+	}
+	
+	//check num ends with digit 5
+	System.out.println("enter number ");
+	int num=scan.nextInt();
+	if(num%5==0) {
+    System.out.println("end with 5");
+	}
+	
+	//salary equal to 25000
+	System.out.println("enter number ");
+	int num=scan.nextInt();
+	if(num==25000) {
+  System.out.println("salary equals to 25000");
+}
+	
+	//check user entered crt pin
+	System.out.println("enter string");
+	String pin=scan.next();
+	if(pin.equals("vishnu@123")) {
+		System.out.println("user entered crt pin");
+	}
+	
+	//check no is 3 digit number
+	System.out.println("enter number ");
+	int num=scan.nextInt();
+	if(num>=100 && num<=999)
+	{
+		System.out.println("number is 3 digit");
+	}
+	
+	//check num is divisible by 2 and 3
+	System.out.println("enter number ");
+	int num=scan.nextInt();
+	if(num%2==0 && num%3==0) {
+		System.out.println("num is div by 2 and  3");
+	}
+	
+//check character is @
+	System.out.println("enter character");
+	char a=scan.next().charAt(0);
+	if(a=='@') {
+		System.out.println("character is @");
+	}
+	
+	//check temperature equal to 0
+	System.out.println("enter number ");
+	int num=scan.nextInt();
+	if(num==0) {
+		System.out.println("temp equal to 0c");
+	}
+	
+	//check year is 2024
+	System.out.println("enter number ");
+	int num=scan.nextInt();
+	if(num==2024) {
+		System.out.println("year is 2024");
+	}
+	
+	//check account balance is zero
+	System.out.println("enter number ");
+	int balance=scan.nextInt();
+	if(balance==0) {
+		System.out.println("account balance zero");
+	}
+      ///if else
+
+  System.out.println("enter num");
+		int num=scan.nextInt();
+		if(num>50) {
+			System.out.println("num greater than 50");
+		}
+		else {
+			System.out.println("num not greater than 50");
+		}
+
+  System.out.println("enter num");
+		int num=scan.nextInt();
+		if(num%9==0) {
+			System.out.println("num div by 9");
+		}
+		else {
+			System.out.println("num not div by 9");
+		}
+
+  //compare 2 string equals or not
+		System.out.println("enter string");
+		String a=scan.nextLine();
+		String b=scan.nextLine();
+		if(a.equals(b)) {
+			System.out.println("2 string equals");
+		}
+		else {
+			System.out.println("2 string not equals");
+		}
+
+    //check age is above 60 or not
+		System.out.println("enter age");
+		int age=scan.nextInt();
+		if(age>60) {
+			System.out.println("age is above 60");
+		}
+		else {
+			System.out.println("age is not above 60");
+		}
+
+    	//check num is 2 digit or not
+		System.out.println("enter age");
+		int num=scan.nextInt();
+		if(num>9 && num<100) {
+			System.out.println("num is 2 digit");
+		}
+		else {
+			System.out.println("num is not 2 digit");
+		}
+
+    //check character is alphabet or not
+		System.out.println("enter alphabet");
+		char a=scan.next().charAt(0);
+		if(a>='A' && a<='Z') {
+			System.out.println("is alphabet");
+		}
+		else {
+			System.out.println("is not alphabet");
+		}
+
+    		//check perfect square
+		System.out.println("enter num");
+		double num=scan.nextInt();
+		double num1=Math.sqrt(num);
+		int no=(int)num1;
+		int sq=(no*no);
+		if(sq==num) {
+			System.out.println("perfect square");
+		}
+		else {
+			System.out.println("not perfect square");
+		}
+
+    		System.out.println("enter amount");
+		int amount=scan.nextInt();
+		if(amount>1000) {
+			System.out.println("free delivery");
+		}
+		else {
+			System.out.println("no free delivery");
+		}
+
+    		//check attendance >=75 or not
+		System.out.println("enter attendance ");
+		int num=scan.nextInt();
+		if(num>=75) {
+			System.out.println("attendance 75");
+		}
+		else {
+			System.out.println("not attendance 75");
+		}
+
+    		//username equals stored user name
+		System.out.println("enter user name");
+		String username=scan.nextLine();
+		String name="vishnu";
+		if(username.equals(name))
+		{
+			System.out.println("username equals to stored username ");
+		}
+		else 
+		{
+			System.out.println("username not equals");
+		}
+
+    //check multiple of 4
+    		System.out.println("enter attendance ");
+		int num=scan.nextInt();
+		if(num%4==0) {
+			System.out.println("multiple of 4");
+		}
+		else {
+			System.out.println("not multiple of 4");
+		}
+
+  		//check power of 2
+		System.out.println("enter attendance ");
+		int num=scan.nextInt();
+		if(num%2==0) {
+			System.out.println("power of 2");
+		}
+		else {
+			System.out.println("not power of 2");
+		}
+
+    	//inp character is space or not
+		System.out.println("enter ch");
+	char a=' ';
+		if(a==' ') {
+			System.out.println("character is space");
+		}
+		else {
+			System.out.println("character is not aspace");
+		}
+
+      //num less than 10
+    	System.out.println("enter no");
+		int num=scan.nextInt();
+		if(num<10) {
+			System.out.println("num less than 10");
+		}
+		else {
+			System.out.println("num not less than 10");
+		}
+				no is divisible by 11
+		System.out.println("enter num");
+		int num=scan.nextInt();
+		if(num%11==0) {
+			System.out.println("num div by 11");
+		}
+		else {
+			System.out.println("num not duv by 11");
+		}
+
+    	//loan amount is approved
+		System.out.println("enter num");
+		int num=scan.nextInt();
+		if(num>=700) {
+			System.out.println("loan amount is approved");
+		}
+		else {
+			System.out.println("loan amount not is approved");
+		}
+
+    //electricity unit >500
+		System.out.println("enter num");
+		int num=scan.nextInt();
+		if(num>500) {
+			System.out.println("electricity unit greater than 500");
+		}
+		else {
+			System.out.println("electricity  not unit greater than 500");
+		}
+
+    		//check mark between 40 and 60
+		System.out.println("enter num");
+		int num=scan.nextInt();
+		if(num>40 && num<60) {
+			System.out.println("mark bw 40 and 60");
+		}
+		else {
+			System.out.println("mark not bw 40 and 60");
+		}
+
+    	//check pw equals "admin123"
+		System.out.println("enter num");
+		String pw=scan.nextLine();
+		if(pw.equals("admin123")) {
+			System.out.println("pw equals admin123");
+		}
+		else {
+			System.out.println("pw equals admin123");
+		}
+
+    		//num is cube or not
+		System.out.println("enter num");
+		int num=scan.nextInt();
+		if(num%3==0) {
+			System.out.println("cube");
+		}
+		else {
+			System.out.println(" not a cube ");
+		}
+      /////if else if else
+
+    
+	}
+}
