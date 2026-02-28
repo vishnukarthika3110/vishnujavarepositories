@@ -314,7 +314,221 @@ public class task2 {
 			System.out.println(" not a cube ");
 		}
       /////if else if else
+		package corejava;
 
-    
+import java.util.Scanner;
+
+public class Elseif {
+
+	public static void main(String[] args) {
+	//season based on month number
+	Scanner scan=new Scanner(System.in);
+	System.out.println("enter num");
+	int num=scan.nextInt();
+	if(num==1 || num==2 || num==12) {
+		System.out.println("winter");
+	}
+	else if(num==3 || num==4 || num==5) {
+		System.out.println("summer");
+	}
+	else if(num==6 || num==7 || num==8) {
+		System.out.println("autumm");
+	}
+	else if(num==9 || num==10 || num==11) {
+		System.out.println("rainy");
+	}
+	else {
+		System.out.println("you entered wrong number");
+	}
+	//check type of quadrilateral
+	System.out.println("enter num");
+	int a=scan.nextInt();
+	int b=scan.nextInt();
+	int c=scan.nextInt();
+	int d=scan.nextInt();
+	
+	int a1=scan.nextInt();
+	int a2=scan.nextInt();
+	int a3=scan.nextInt();
+	int a4=scan.nextInt();
+	
+	if((a==b && a==c && a==d) && (a1==a2  && a1==a3 && a1==a4) ) {
+		System.out.println("square");
+	}
+	else if((a==c && b==d ) &&(a1==a2  && a1==a3 && a1==a4)) {
+		System.out.println("rectangle");
+	}
+	else if((a==b && a==c && a==d) && (a1!=90  && a2!=90 && a3!=90 && a4!=90)) {
+		System.out.println("rhombus");
+	}
+	else if((a==c && b==d) && (a1==a3 && a2==a4)) {
+		System.out.println("parallelogram");
+	}
+	else if((((a==c && b!=d)|| (a!=b && c==d) ) && ((a1==a3 && a2!=a4) ||(a1!=a2  && a3==a4)  ))) {
+		System.out.println("trapezium");
+	}
+	else if(((a==b && c==d && a!=c)||(a==d && b==c && a!=b) ) &&(a==c || b==d)){
+		System.out.println("kite");
+	}
+	else{
+	System.out.println("invalid");
+	}
+	//find smallest of 3 numbers
+	System.out.println("enter num");
+	int a=scan.nextInt();
+	int b=scan.nextInt();
+	int c=scan.nextInt();
+	if(a>b && a>c) {
+		System.out.println("a is greater");
+	}
+	else if(b>a && b>c) {
+		System.out.println("b is greater");
+	}
+	else {
+		System.out.println("c is greater");
+	}
+
+	//assign performance rating
+	System.out.println("enter mark");
+	int a=scan.nextInt();
+	if(a>=90 && a<=100) {
+		System.out.println("excellent");
+	}
+	else if(a>=80 && a<90) {
+		System.out.println("good");
+	}
+	else if(a>=70 && a<80) {
+		System.out.println("avg");
+	}
+	else {
+		System.out.println("poor");
+	}
+		//find largest no among 4 numbers
+	System.out.println("enter num");
+	int a=scan.nextInt();
+	int b=scan.nextInt();
+	int c=scan.nextInt();
+	int d=scan.nextInt();
+	if(a>b && a>c && a>d) {
+		System.out.println("a is greater");
+	}
+	else if(b>a && b>c && b>d) {
+		System.out.println("b is greater");
+	}
+	else if(c>a && c>b && c>d) {
+		System.out.println("c is greater");
+	}
+	else {
+		System.out.println("d is greater");
+	}
+    //temperature range
+	System.out.println("enter num");
+	int a=scan.nextInt();
+	if(a>=-25 && a<8) {
+		System.out.println("freezing");
+	}
+	else if(a>=8 && a<20) {
+		System.out.println("cold");
+	}
+	else if(a>=20 && a<=40) {
+		System.out.println("warm");
+	}
+	else {
+		System.out.println("hot");
+	}
+
+
+	//atm balance check
+	System.out.println("enter num");
+	int num=scan.nextInt();
+	if(num==1) {
+		System.out.println("check balance");
+		int balance=5000;
+		System.out.println(balance);
+		System.out.println("enter func");
+		int fun=scan.nextInt();
+		if(fun==1) {
+			System.out.println("amount withdraw");
+			System.out.println("amount withdraw amount");
+			int amount=scan.nextInt();
+			if(amount<balance) {
+				System.out.println("amount withdrawed");
+			}
+			else {
+				System.out.println("insuffecient balance");
+			}
+		}
+		else if(fun==2) {
+			System.out.println("cash deposit");
+			System.out.println("enter amount to deposit");
+			int amount=scan.nextInt();
+			System.out.println(amount +"deposited");
+		}
+		else {
+			System.out.println("you entered wrong");
+		}
+	}
+	else {
+		System.out.println("you entered wrong");
+	}
+
+	//check number range
+	System.out.println("enter num");
+	int num=scan.nextInt();
+	if(num>=0 && num<=10) {
+		System.out.println("num bw 0 to 10");
+	}
+	else if(num>10 && num<=50) {
+		System.out.println("num bw 11 to 50");
+	}
+	else if(num>50 && num<=100) {
+		System.out.println("num bw 50 to 100");
+	}
+	else if(num>100) {
+		System.out.println("num greater than 100");
+	}
+	else {
+		System.out.println("you entered wrong");
+	}
+
+	//check num positive ,negative or zero
+	System.out.println("enter num");
+	int num=scan.nextInt();
+	if(num>0) {
+		System.out.println("positive");
+	}
+	else if(num==0) {
+		System.out.println("zero");
+	}
+	else {
+		System.out.println("negative");
+	}
+	//check eligibility based on mark and income
+	System.out.println("enter mark");
+	int mark=scan.nextInt();
+	System.out.println("enter amount");
+	int income=scan.nextInt();
+	if(mark >=80 && income<=100000) {
+		System.out.println("eligible for scholarship");
+	}
+	else {
+		System.out.println("not eligible");
+	}
+
+	//determine blood pressure level
+	System.out.println("bp level");
+	int level=scan.nextInt();
+	if(level>=80 && level<=120) {
+		System.out.println("normal");
+	}
+	else if(level>120 && level<=130) {
+		System.out.println("medium");
+	}
+	else if(level>130 ) {
+		System.out.println("150");
+	}
+	else {
+		System.out.println("low bp");
+	}
 	}
 }
