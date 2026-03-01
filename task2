@@ -530,5 +530,397 @@ public class Elseif {
 	else {
 		System.out.println("low bp");
 	}
+		//num of days based on leap year or not
+	System.out.println("enter year");
+	int year=scan.nextInt();
+	if((year%4==0 && year%100!=0) || (year%400==0)) {
+		System.out.println( year +"leap year has 366days");
+	}
+	else {
+		System.out.println( year +" not aleap year has 365days");
+	}
+	//classify bmi into 5 categories
+	System.out.println("enter heigt");
+	int height=scan.nextInt();
+	System.out.println("enter weight");
+	int weight=scan.nextInt();
+	double bmi=weight/(height*height);
+	if(bmi<18.5) {
+		System.out.println("underweight");
+	}
+	else if(bmi<25) {
+		System.out.println("normal weight");
+	}
+	else if(bmi<30) {
+		System.out.println("over weight");
+	}
+	else {
+		System.out.println("obese");
+	}
+	//check cricket score level
+	System.out.print("Enter Player Runs: ");
+    int runs = scan.nextInt();
+
+    if (runs == 0) {
+        System.out.println("Duck Out");
+    }
+    else if (runs >= 50) {
+        System.out.println(" half Century");
+	}
+    else if(runs>=100){
+        System.out.println("century");
+	}
+    else {
+    	System.out.println("nomal");
+    }
+	//internet speed
+	System.out.println("enter internet speed");
+	int speed=scan.nextInt();
+	if(speed>=2 && speed<=10) {
+		System.out.println("slow");
+	}
+	else if(speed>10 && speed<=100) {
+		System.out.println("medium");
+	}
+	else if(speed>100) {
+		System.out.println("fast");
+	}
+	else {
+		System.out.println("very poor");
+	}
+	//tranport by wheels
+	System.out.println("enter wheel count");
+	int count=scan.nextInt();
+	if(count==2) {
+		System.out.println("bike");
+	}
+	else if(count==4) {
+		System.out.println("car");
+	}
+	else if(count==6) {
+		System.out.println("bus or truck");
+	}
+	else {
+		System.out.println("no");
+	}
+	//assign bonus based on exp
+	System.out.println("enter exp");
+	int exp=scan.nextInt();
+	if(exp>=10) {
+		System.out.println(" bonus 10k");
+	}
+	else if(exp>=5) {
+		System.out.println("bonus 7k");
+	}
+	else if(exp>=1) {
+		System.out.println("bonus 4k");
+	}
+	else {
+		System.out.println("no");
+	}
+	//categorize exam result
+		System.out.println("enter mark");
+		int a=scan.nextInt();
+		if(a>=90 && a<=100) {
+			System.out.println("distinction");
+		}
+		else if(a>=70 && a<90) {
+			System.out.println("merit");
+		}
+		else if(a>=50 && a<=60) {
+			System.out.println("pass");
+		}
+		else {
+			System.out.println("fail");
+		}
+		//check triangle validity
+	System.out.println("enter side");
+	int side1=scan.nextInt();
+	int side2=scan.nextInt();
+	int side3=scan.nextInt();
+	if(side1+side2>side3 && side2+side3>side1 && side1+side3>side2) {
+		System.out.println("validity");
+	}
+	else {
+		System.out.println("not validity");
+	}
+
+	//check ch
+	System.out.println("enter ch");
+	char ch=scan.next().charAt(0);
+	if(ch=='a' && ch=='z') {
+		System.out.println("lowercase");
+	}
+	else if(ch=='A' && ch=='Z') {
+		System.out.println("uppercase");
+	}
+	else if(ch>='0' && ch<='0'){
+		System.out.println("digit");
+	}
+	else {
+		System.out.println("special ch");
+	}
+
+  // nested if
+	Scanner scan=new Scanner(System.in);
+		System.out.println("enter num");
+		int num=scan.nextInt();
+		if(num>0) {
+			if(num%2==0) {
+				System.out.println("even");
+			}
+			else {
+				System.out.println("odd");
+			}
+		}
+		else {
+			System.out.println("negative");
+		}
+
+			//check student passed the exam then check for distinction
+		System.out.println("enter mark");
+		int sub1=scan.nextInt();
+		int sub2=scan.nextInt();
+		int sub3=scan.nextInt();
+		if(sub1>=50 &&sub1>=50 && sub1>=50 ) {
+			System.out.println("pass");
+			int avg=sub1+sub2+sub3;
+			if(avg>=75) {
+				System.out.println("distinction");
+			}
+			else {
+				System.out.println("avg");
+			}
+		}
+		else {
+			System.out.println("fail");
+		}
+	//check eligibility for driving license
+		System.out.println("enter age");
+		int age=scan.nextInt();
+		scan.nextLine();
+		if(age>=18) {
+			System.out.println("have your license");
+			String ans=scan.nextLine();
+			if(ans.equals("yes")) {
+				System.out.println("user has license");
+			}
+			else {
+				System.out.println("user has no license");
+			}
+		}
+		else {
+			System.out.println("age less than 18");
+		}
+
+		//username login
+		System.out.println("enter username");
+		String user=scan.nextLine();
+		if(user.equals("xyz")) {
+			String pass=scan.nextLine();
+			if(pass.equals("xyz123")) {
+				System.out.println("login");
+			}
+			else {
+				System.out.println("incrt");
+			}
+		}
+		else {
+			System.out.println("entered wrong");
+		}
+		//no div by 5 then by 10
+		System.out.println("enter no");
+		int no=scan.nextInt();
+		if(no%5==0) {
+			if(no%10==0) {
+				System.out.println("no div by 5 and 10");
+			}
+			else {
+				System.out.println("no div by 5 only");
+			}
+		}
+		else {
+			System.out.println("no not div by 5");
+		}
+		//check year div by 4 then check leap year
+		System.out.println("enter year");
+		int year=scan.nextInt();
+		if(year%4==0) {
+			if(year%400==0 && year%100==0) {
+				System.out.println("leap year");
+			}
+			else {
+				System.out.println("not a leap year");
+			}
+		}
+		else {
+			System.out.println("normal year");
+		}
+	//salary 30000 then check for bonus
+		System.out.println("enter salary");
+		int salary=scan.nextInt();
+		if(salary>=30000) {
+			int exp=scan.nextInt();
+			if(exp>5) {
+				System.out.println("bonus 10k");
+			}
+			else {
+				System.out.println("exp less than 5");
+			}
+		}
+		else {
+			System.out.println("salary less than 30k");
+		}
+		//Check if student attendance ≥ 75% → then check if marks ≥ 50 for exam eligibility.
+		System.out.println("enter sattendence");
+		int attend=scan.nextInt();
+		if(attend>=75){
+		int mark=scan.nextInt(); 
+		if(mark>=50){
+			System.out.ptintln("eligible");
+		}
+		else{
+		System.out.ptintln(" not eligible");
+		}
+		}
+		else{
+		System.out.ptintln(" attendence percentage less ");
+		}
+	//Check if number is divisible by 2 → then check if divisible by 4.
+	System.out.println("enter no");
+		int no=scan.nextInt();
+		if(no%2==0) {
+			if(no%4==0) {
+				System.out.println("no div by 2 and 4");
+			}			else {
+				System.out.println("no div by 4 only");
+			}
+		}
+		else {
+			System.out.println("no not div by 2");
+		}
+		//Check if purchase amount > 1000 → then check if customer is premium member
+		System.out.println("enter purchase");
+		int purchase=scan.nextInt();
+		if(purchase>1000){
+		System.out.println("premium member");
+		}
+		else{
+		System.out.println( " not premium member");
+		}
+		//Check if employee department is "IT" → then check if performance rating ≥ 4.
+		System.out.println("enter dep");
+		String dep=scan.nextLine();
+		if(dep.equals("IT")){
+		int rating=scan.nextInt();
+		if(rating>=4){
+		System.out.println("rating is 4");
+		}
+		else{
+		c
+		}
+		}
+		else{
+		System.out.println("no it dep");
+		}
+		//Check if input is digit → then check if it is even digit.
+		System.out.println("enter no");
+		int no=scan.nextInt();
+		if(no>0){
+		if(no%2==0){
+		System.out.println("even");
+		}
+		else{
+		System.out.println("not even");
+		}
+		}
+		else{
+		System.out.println("not digit");
+		}
+		//Check if password length ≥ 8 → then check if it contains a digit.
+		System.out.println("enter pass");
+		int pass=scan.nextInt();
+		if(pass.length()>=8){
+		if(pass>='0' ){
+		System.out.println("digit");
+		}
+		else{
+		System.out.println(" not digit");
+		}
+		}
+		else{
+		System.out.println(" len less than 8");
+		}
+		//Check if number > 1 → then check if prime.
+		//no div by 1 and itself
+		System.out.println("enter no");
+		int no=scan.nextInt();
+		if(no>1) {
+			
+			if(no%2==0) {
+				System.out.println("prime");
+			}
+			else {
+				System.out.println("not prime");
+			}
+		}
+		else {
+			System.out.println("less than 1");
+		}
+
+		//Check if marks ≥ 35 → then check if marks ≥ 90 (Topper).
+		System.out.println("enter mark");
+		int mark=scan.nextInt();
+		if(mark>=35){
+		if(mark>=90){
+		System.out.println("topper");
+		}
+		else{
+		System.out.println("avg");
+		}
+		}
+		else{
+		System.out.println("fail");
+		}
+		//Check if temperature > 0 → then check if less than 20 (Cold category).
+		System.out.println("enter temp");
+		int temp=scan.nextInt();
+		if(temp>0){
+		if(temp<=20){
+		System.out.println("freeze");
+		}
+		else{
+		System.out.println("hot");
+		}
+		}
+		else{
+		System.out.println("less than 0");
+		}
+
+		//Check if account balance > 0 → then check if withdrawal amount ≤ balance.
+		
+		int balance=5000;
+		if(balance>0){
+		System.out.println("enter func");
+		String func=scan.nextLine();
+		if(func.equals("withdraw"){
+		System.out.println("enter amount");
+		int amount=scan.nextInt();
+		if(amount<=balance){
+		balance=balance-amount;
+		System.out.println("amount withdraw");
+		}
+		else{
+		System.out.println("INSUFFECIENT");
+		}
+		}
+		else{
+		System.out.println("another func");
+		}}
+		else{
+		System.out.println("insuffecient baLance");
+		}
+		}
+		
 	}
 }
