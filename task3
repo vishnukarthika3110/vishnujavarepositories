@@ -149,6 +149,12 @@ public class Forloop {
 		else {
 			System.out.println("not a perfect num");
 		}
+		// print num bw 1 to 50
+		System.out.println("enter no");
+		int n=scan.nextInt();
+		for(int i=1;i<=n;i++) {
+			System.out.println(i);
+		}
 	}
 
 }
